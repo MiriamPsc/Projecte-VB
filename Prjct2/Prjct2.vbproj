@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11AAE568-A809-4C8B-BF94-0C0D5219A7DE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Prjct2.My.MyApplication</StartupObject>
+    <RootNamespace>Prjct2</RootNamespace>
+    <AssemblyName>Prjct2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Prjct2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Prjct2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="InputKey">
+      <HintPath>..\..\..\..\Downloads\InputKey.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Algoritmos de Ordenamiento\Burbuja.Designer.vb">
+      <DependentUpon>Burbuja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Algoritmos de Ordenamiento\Burbuja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Algoritmos de Ordenamiento\CocktailSort.Designer.vb">
+      <DependentUpon>CocktailSort.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Algoritmos de Ordenamiento\CocktailSort.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Algoritmos de Ordenamiento\Count.Designer.vb">
+      <DependentUpon>Count.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Algoritmos de Ordenamiento\Count.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras\Grafos\Arista.vb" />
+    <Compile Include="Estructuras\Arboles\Arbol.Designer.vb">
+      <DependentUpon>Arbol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras\Arboles\Arbol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras\Arboles\ArbolBinario.vb" />
+    <Compile Include="Estructuras\Arboles\ArbolBinarioOrdenado.vb" />
+    <Compile Include="Estructuras\Colas\Cola.Designer.vb">
+      <DependentUpon>Cola.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras\Colas\Cola.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras\Colas\ColaOperaciones.vb" />
+    <Compile Include="Estructuras\Colas\NodoCola.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras\Lista Enlazada\ListaEnlazada.Designer.vb">
+      <DependentUpon>ListaEnlazada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras\Lista Enlazada\ListaEnlazada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras\Lista Enlazada\LESOperaciones.vb" />
+    <Compile Include="Estructuras\Lista Circular\ListaCircularSimpleOperaciones.vb" />
+    <Compile Include="Estructuras\Lista Circular\ListaSimpleCircular.Designer.vb">
+      <DependentUpon>ListaSimpleCircular.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras\Lista Circular\ListaSimpleCircular.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras\Lista Doble\ListaDoblementeEnlazadaOperaciones.vb" />
+    <Compile Include="Estructuras\Lista Doble\ListaDobleSimple.Designer.vb">
+      <DependentUpon>ListaDobleSimple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras\Lista Doble\ListaDobleSimple.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras\Lista Doble Circular\ListaDobleCircular.Designer.vb">
+      <DependentUpon>ListaDobleCircular.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras\Lista Doble Circular\ListaDobleCircular.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras\Lista Doble Circular\ListaDobleCircularOperaciones.vb" />
+    <Compile Include="Estructuras\Grafos\Grafos1.Designer.vb">
+      <DependentUpon>Grafos1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras\Grafos\Grafos1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras\Grafos\MatrizAdyacencia.Designer.vb">
+      <DependentUpon>MatrizAdyacencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras\Grafos\MatrizAdyacencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras\Grafos\MatrizPeso.Designer.vb">
+      <DependentUpon>MatrizPeso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras\Grafos\MatrizPeso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAlgoritmos.Designer.vb">
+      <DependentUpon>MenuAlgoritmos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAlgoritmos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuEstructuras.Designer.vb">
+      <DependentUpon>MenuEstructuras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuEstructuras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Estructuras\Lista Enlazada\NodoLES.vb" />
+    <Compile Include="Estructuras\Lista Circular\NodoLCS.vb" />
+    <Compile Include="Estructuras\Lista Doble\NodoLDE.vb" />
+    <Compile Include="Estructuras\Lista Doble Circular\NodoLEDC.vb" />
+    <Compile Include="Estructuras\Pilas\NodoP.vb" />
+    <Compile Include="Estructuras\Pilas\Pilas.Designer.vb">
+      <DependentUpon>Pilas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras\Pilas\Pilas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras\Pilas\PilasOperaciones.vb" />
+    <Compile Include="Estructuras\Arboles\NodoArbol.vb" />
+    <Compile Include="Estructuras\Grafos\NodoGrafos.vb" />
+    <Compile Include="Algoritmos de Ordenamiento\Shell.Designer.vb">
+      <DependentUpon>Shell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Algoritmos de Ordenamiento\Shell.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Algoritmos de Ordenamiento\Radix.Designer.vb">
+      <DependentUpon>Radix.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Algoritmos de Ordenamiento\Radix.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Algoritmos de Ordenamiento\Burbuja.resx">
+      <DependentUpon>Burbuja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Algoritmos de Ordenamiento\CocktailSort.resx">
+      <DependentUpon>CocktailSort.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Algoritmos de Ordenamiento\Count.resx">
+      <DependentUpon>Count.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras\Arboles\Arbol.resx">
+      <DependentUpon>Arbol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras\Colas\Cola.resx">
+      <DependentUpon>Cola.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras\Lista Enlazada\ListaEnlazada.resx">
+      <DependentUpon>ListaEnlazada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras\Lista Circular\ListaSimpleCircular.resx">
+      <DependentUpon>ListaSimpleCircular.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras\Lista Doble\ListaDobleSimple.resx">
+      <DependentUpon>ListaDobleSimple.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras\Lista Doble Circular\ListaDobleCircular.resx">
+      <DependentUpon>ListaDobleCircular.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras\Grafos\Grafos1.resx">
+      <DependentUpon>Grafos1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras\Grafos\MatrizAdyacencia.resx">
+      <DependentUpon>MatrizAdyacencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras\Grafos\MatrizPeso.resx">
+      <DependentUpon>MatrizPeso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAlgoritmos.resx">
+      <DependentUpon>MenuAlgoritmos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuEstructuras.resx">
+      <DependentUpon>MenuEstructuras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras\Pilas\Pilas.resx">
+      <DependentUpon>Pilas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Algoritmos de Ordenamiento\Shell.resx">
+      <DependentUpon>Shell.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Algoritmos de Ordenamiento\Radix.resx">
+      <DependentUpon>Radix.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4767f4310c161c0be977808247daca37.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
